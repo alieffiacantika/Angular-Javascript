@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <link rel="stylesheet"href="design.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body ng-app="list">
+    <fieldset ng-controller="maincontroller">
+      <label>Judul</label><br/>
+      <input type="text" id="title" ng-model="judul"><br/>
+      <label>Penulis</label><br/>
+      <input type="text" id="penulis" ng-model="penulis"><br/>
+      <label>Tahun</label><br/>
+      <input type="text" id="tahun" ng-model="tahun"><br/>
+      <label>Status</label><br/>
+      <select id="status" ng-model="status">
+        <option value="selesai dibaca">selesai dibaca</option>
+        <option value="belum selesai dibaca">belum selesai dibaca</option>
+      </select><br/><br/>
+      <button id ="add" nb-click="additem()">Tambah List</button>
+    </fieldset>
+    
+    <fieldset>
+      <legend align="center"><h1>Cari BuKu Sesuai Judul</h1></legend>
+      <label>Judul</label>
+      <input type="text" id="caris">
+
+      <button id ="cari" >Cari</button>
+    </fieldset>
+    
+    <fieldset >
+      <legend align="center"><h1>Sudah Selesai Dibaca</h1></legend>
+      <div id="sudah">
+      </div>
+    </fieldset>
+    <fieldset >
+      <legend align="center"><h1>Belum Selesai Dibaca</h1></legend>
+      <div id="belum">
+      </div>
+    </fieldset>
+    <script src="js/maincontroller.js"></script>
+    <script src="script.js">
+      
+    </script>
+  </body>
+</html>

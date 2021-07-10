@@ -1,0 +1,25 @@
+fieldset{
+  background-color:rgb(243,49,100,0.1);
+}
+legend{
+  color:green;
+}
+label{
+  color:darkblue;
+}
+button{
+  background-color:rgb(23,249,100,0.3);
+  border:2px solid black;
+  border-radius:10px;
+  width:300px;
+  height:20px;
+}
+#cari{
+  width:100px;
+}
+#main{
+  border-radius:30px;
+  margin-left:30%;
+  margin-right:30%;
+  padding-left:100px;
+}
